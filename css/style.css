@@ -16,30 +16,113 @@
 body {
     display: flex;
     justify-content: center;
+    margin:0;
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom:20px;
+    align-items: center;
 }
 
-nav {
-    display: inline;
-   margin:0;
+.div-logo img {
+    height: auto;
+    width: 32%;
+    margin-top: 10px;
+}
+
+
+
+.bouton-nav {
+    border-top: 3px solid transparent;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    /* j'augmente la surface cliquable grace au padding-bottom, le top est juste pour la barre bleue au dessus */
+}
+
+.bouton-nav:hover {
+    padding-top:14px;
+    border-top-color:#0065FC;
+    color:#0065FC;
+    
 }
 
 ul {
-display: flex;
+    display: flex;
     list-style: none;
-    gap:40px
+    gap: 75px;
     
 }
+
+.formulaire-filtres {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.formulaire-filtres p {
+    margin-top:8px;
+}
+.formulaire {
+    display: flex;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    height: 50px;
+    border-radius: 14px;
+    overflow: hidden;
+    gap:0;
+    margin-top: 16px;
+    width: fit-content;
+
+}
+
+.map-icon {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    
+    
+}
+
+.map-icon i {
+    color: black;
+    
+}
+
+#input-id {
+    border: none;
+    outline: none;
+    padding: 0px 12px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 180px;
+    text-align: center;
+}
+
+.bouton-recherche {
+    height: 50px;
+    background-color: #0065FC;
+    color :white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0px 16px;
+    border: 1px solid #0065FC;
+    /* Pourquoi la bordure reste grise ?? */
+    
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+}
+
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 30px;
     box-sizing: border-box;
 }
 
