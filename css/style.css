@@ -16,14 +16,14 @@
 body {
     display: flex;
     justify-content: center;
-    margin:0;
+    margin: 0;
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     align-items: center;
 }
 
@@ -42,17 +42,17 @@ header {
 }
 
 .bouton-nav:hover {
-    padding-top:14px;
-    border-top-color:#0065FC;
-    color:#0065FC;
-    
+    padding-top: 14px;
+    border-top-color: #0065FC;
+    color: #0065FC;
+
 }
 
 ul {
     display: flex;
     list-style: none;
     gap: 75px;
-    
+
 }
 
 .formulaire-filtres {
@@ -62,8 +62,9 @@ ul {
 }
 
 .formulaire-filtres p {
-    margin-top:8px;
+    margin-top: 8px;
 }
+
 .formulaire {
     display: flex;
     align-items: center;
@@ -71,7 +72,7 @@ ul {
     height: 50px;
     border-radius: 14px;
     overflow: hidden;
-    gap:0;
+    gap: 0;
     margin-top: 16px;
     width: fit-content;
 
@@ -84,13 +85,13 @@ ul {
     justify-content: center;
     align-items: center;
     background-color: #F2F2F2;
-    
-    
+
+
 }
 
 .map-icon i {
     color: black;
-    
+
 }
 
 #input-id {
@@ -106,32 +107,32 @@ ul {
 .bouton-recherche {
     height: 50px;
     background-color: #0065FC;
-    color :white;
+    color: white;
     font-weight: bold;
     font-size: 17px;
     padding: 0px 16px;
     border: 1px solid #0065FC;
     /* Pourquoi la bordure reste grise ?? */
-    
+
     border-radius: 0 12px 12px 0;
     cursor: pointer;
 }
 
 .bouton-recherche i {
-   color:white;
-   display: none;
+    color: white;
+    display: none;
 }
 
 .filtres {
-display: flex;
-gap:20px;
-margin: 32px 0;
-align-items: center;
+    display: flex;
+    gap: 20px;
+    margin: 32px 0;
+    align-items: center;
 }
 
 .filtres h2 {
     font-size: 19px;
-    margin:0;
+    margin: 0;
 }
 
 .bouton-filtres {
@@ -143,17 +144,35 @@ align-items: center;
     background-color: white;
     display: flex;
     justify-content: center;
-    gap:11px;
+    gap: 11px;
     cursor: pointer;
 
 }
 
 .bouton-filtres i {
-   font-size:20px;
+    font-size: 20px;
 }
 
 .bouton-filtres:hover {
     background-color: #DEEBFF;
+}
+
+.info {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+
 }
 
 .main-container {
@@ -212,6 +231,49 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+   display: flex;
+   flex-direction: column;
+    
+}
+
+.hebergements-cards {
+    display: flex;
+
+}
+
+.hebergements-cards .card {
+    /* display: flex; quand j'active le flex ça casse tout... pourquoi ?*/
+    margin-top: 33px;
+    margin-right: 33px;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+.hebergements-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
 }
 
 /****** Populaires ***********/
