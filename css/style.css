@@ -238,13 +238,17 @@ a {
 
 .hebergements-cards {
     display: flex;
+    flex-wrap: wrap;
+    gap: 2px 28px;
 
 }
 
-.hebergements-cards .card {
-    /* display: flex; quand j'active le flex ça casse tout... pourquoi ?*/
-    margin-top: 33px;
-    margin-right: 33px;
+
+
+.hebergements-cards a {
+    width: 31%;
+    margin-top: 30px;
+   
 }
 
 .hebergements-cards img {
@@ -255,11 +259,10 @@ a {
 
 
 .hebergements-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: 100%;
+    padding-left: 12px;
+    
+
     box-sizing: border-box;
 }
 
@@ -274,6 +277,14 @@ a {
 
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
+}
+
+.afficher-plus {
+    margin-top: 22px;
+    padding: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    width: fit-content;
 }
 
 /****** Populaires ***********/
