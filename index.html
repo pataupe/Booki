@@ -22,8 +22,8 @@
             </div>
             <nav>
                 <ul>
-                    <li><a class="bouton-nav" href="#">Hébergements</a></li>
-                    <li><a class="bouton-nav" href="#">Activités</a></li>
+                    <li><a class="bouton-nav" href="#hebergements">Hébergements</a></li>
+                    <li><a class="bouton-nav" href="#activites">Activités</a></li>
                 </ul>
             </nav>
         </header>
@@ -33,7 +33,7 @@
                 <p>En plein centre-ville ou en pleine nature</p>
                 <form class="formulaire">
                     <label class="map-icon" for="input-id"><i class="fa-solid fa-location-dot"></i></label>
-                    <input id="input-id" type="text" value="Marseille, France">
+                    <input id="input-id" type="text" placeholder="Marseille, France">
                     <button class="bouton-recherche" type="submit"><i
                             class="fa-solid fa-magnifying-glass"></i>Rechercher</button>
                 </form>
@@ -50,7 +50,7 @@
                 </div>
             </section>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section id="hebergements" class="hebergements">
                     <h2 class="section-title">Hébergements à Marseille</h2>
                     <div class="hebergements-cards">
                         <a href="#">
@@ -242,6 +242,43 @@
                     </div>
                 </section>
             </div>
+            <section id="activites"  class="activites">
+                <h2 class="section-title">Activités à Marseille</h2>
+                <div  class="activites-cards">
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Image du Vieux Port">
+                            <div class="card-content">
+                                <h3 class="card-title">Vieux-Port</h3>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/paul-hermann.jpg" alt="Image du Fort de Pomègues">
+                            <div class="card-content">
+                                <h3 class="card-title">Fort de Pomègues</h3>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image du Parc national des Calanques">
+                            <div class="card-content">
+                                <h3 class="card-title">Parc national des Calanques</h3>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/florian-wehde.jpg" alt="Image de Notre-Dame-de-la-Garde">
+                            <div class="card-content">
+                                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
         </main>
         <footer></footer>
     </div>
