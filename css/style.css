@@ -72,7 +72,6 @@ ul {
     height: 50px;
     border-radius: 14px;
     overflow: hidden;
-    gap: 0;
     margin-top: 16px;
     width: fit-content;
 
@@ -376,6 +375,33 @@ a {
 
 .activites-cards .card {
     padding: 0;
+}
+
+/****** Footer ***********/
+
+footer {
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    flex: 1;
+}
+
+.footer-section h3 {
+    margin:0;
+}
+
+.footer-section a {
+    width: fit-content;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
