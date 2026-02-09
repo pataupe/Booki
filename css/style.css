@@ -27,6 +27,39 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
 /****** Header ***********/
 header {
     display: flex;
@@ -108,8 +141,9 @@ ul {
     outline: none;
     font-size: 18px;
     font-weight: 700;
-    width: 219px;
+    width: 200px;
     text-align: center;
+    padding: 0 10px;
 }
 
 #input-id::placeholder {
@@ -124,8 +158,6 @@ ul {
     font-size: 17px;
     padding: 0px 16px;
     border: 1px solid #0065FC;
-    /* Pourquoi la bordure reste grise ?? */
-
     border-radius: 0 12px 12px 0;
     cursor: pointer;
 }
@@ -135,6 +167,7 @@ ul {
     display: none;
 }
 
+/****** Filtres ***********/
 .filtres {
     display: flex;
     gap: 20px;
@@ -189,38 +222,6 @@ ul {
 }
 
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
-
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-}
-
-.euro {
-    font-weight: 700;
-}
-
-.neutral-star {
-    color: var(--main-bg-color)
-}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -690,7 +691,7 @@ footer {
     .activites-cards {
         flex-direction: column;
         align-items: center;
-        gap:0px
+        gap:0px;
     }
 
     .activites-cards a {
@@ -711,7 +712,7 @@ footer {
         margin-top: 60px;
         flex-direction: column;
         gap: 30px;
-        padding-top: 10px;
+        padding: 10px 0;
     }
 
     .footer-section {
