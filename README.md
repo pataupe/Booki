@@ -56,4 +56,6 @@ Aucune dépendance à installer.
 
 ## 👤 Auteur
 
-Projet réalisé dans le cadre de la formation OpenClassrooms
+- Nom : Nathan Degorce
+- GitHub : [@pataupe](https://github.com/pataupe)  
+- Contexte : Projet réalisé dans le cadre de la formation OpenClassrooms
